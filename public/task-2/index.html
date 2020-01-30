@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="calc.js"></script>
+</head>
+<body>
+	
+<div class="container-fluid">
+	<div class="container mt-5 pt-5">			
+	<table border="0" class="mx-auto text-center col-md-4 col-6 mt-5 pt-5 shadow bg-info">
+		<tr>
+			<td colspan="4" class="py-md-2"><input type="text" class="w-100 py-3" id="result" readonly></td>
+		</tr>
+		<tr>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-danger" value="c" onclick="clr()"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="*" onclick="opr('*')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="=" onclick="eql()"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-warning" value="d" onclick="alr()"></td>
+		</tr>
+		<tr>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="1" onclick="opr('1')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="2" onclick="opr('2')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="3" onclick="opr('3')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="+" onclick="opr('+')"></td>
+		</tr>
+		<tr>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="4" onclick="opr('4')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="5" onclick="opr('5')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="6" onclick="opr('6')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="-" onclick="opr('-')"></td>
+		</tr>
+        <tr>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="7" onclick="opr('7')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="8" onclick="opr('8')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="9" onclick="opr('9')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="/" onclick="opr('/')"></td>
+		</tr>
+		<tr>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="(" onclick="opr('(')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="." onclick="opr('.')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value="0" onclick="opr('0')"></td>
+			<td class="p-2"><input type="button" class="w-100 mx-auto text-center rounded-circle border-0 py-md-2 btn-primary" value=")" onclick="opr(')')"></td>		
+		</tr>
+	</table>
+</div>
+</div>
+
+</body>
+</html>
